@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
+    description: "Website built using Javascript",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -16,46 +16,46 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Multilingual Music App",
+    description: "Spotify-based music translation platform with language-aware playlist generation",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    tag: ["All", "AI/ML", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Stock Market Prediction",
+    description: "Model that uses sentiment analysis and economic data to predict if the user should buy/sell/hold shares of a given stock",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Python", "AI/ML"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "ISF DUIRI Hearing-Loss Impacted Population Analysis",
+    description: "Longitudinal analysis of US-based hearing-impaired population's relationship with infrastructure",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Research", "Data", "Python"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "VIP: Reproducible AI Software",
+    description: "Development of tool that anlysed repository reproducibility",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Research", "AI/ML"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Generative Visual Model",
+    description: "Analysis of 3-D AI generation software for efficiency, quality, and reproducibility",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Research", "AI/ML"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -92,12 +92,27 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
+          name="Research"
           isSelected={tag === "Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
+          name="Python"
+          isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="AI/ML"
+          isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Data"
+          isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Web"
           isSelected={tag === "Mobile"}
         />
       </div>

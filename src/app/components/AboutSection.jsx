@@ -9,32 +9,43 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>Python</li>
+        <li>MATLAB</li>
+        <li>C/C++</li>
+        <li>HTML/CSS</li>
+        <li>Raspberry Pi</li>
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
         <li>JavaScript</li>
         <li>React</li>
+        <li>Microsoft Office</li>
+        <li>Google Suite</li>
       </ul>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Campus Involvements",
+    id: "organizations",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Purdue University College of Engineering</li>
+        <li>InnovateHer Hackathon: Program Lead</li>
+        <li>Purdue Student Government: Director of Sustainability, Host: Talk Trash Podcast</li>
+        <li>Electrical & Computer Engineering Student Society (ECESS): SPARK, Podcast Committees</li>         
+        <li>Women in Engineering: Mentor, Recruitment Project Committee</li>
       </ul>
     ),
   },
-  {
-    title: "Certifications",
-    id: "certifications",
+ {
+    title: "Areas of Interest",
+    id: "interests",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Computer Vision</li>
+        <li>Data Engineering</li>
+        <li>FinTech</li>
+        <li>Sustainability</li>
+        <li>Technology</li>
       </ul>
     ),
   },
@@ -57,12 +68,13 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I am an aspiring computer engineer with a passion for creating
+            AI/ML-based implementations to problems involving data analysis, 
+            generation, and collection. I have experience working with 
+            multiple programming languages including Python, C, MATLAB, JS, 
+            and Git. I'm a quick and enthusiastic learner, always
+            willing to broaden my horizons. I am a team player with excellent
+            communication, leadership, and organizational skills. 
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -73,18 +85,18 @@ const AboutSection = () => {
               Skills{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("organizations")}
+              active={tab === "organizations"}
             >
               {" "}
-              Education{" "}
+              Campus Involvement{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("interests")}
+              active={tab === "interests"}
             >
               {" "}
-              Certifications{" "}
+              Areas of Interest{" "}
             </TabButton>
           </div>
           <div className="mt-8">
