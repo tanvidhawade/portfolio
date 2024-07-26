@@ -72,7 +72,7 @@ const AboutSection = () => {
             AI/ML-based implementations to problems involving data analysis, 
             generation, and collection. I have experience working with 
             multiple programming languages including Python, C, MATLAB, JS, 
-            and Git. I'm a quick and enthusiastic learner, always
+            and Git. I am a quick and enthusiastic learner, always
             willing to broaden my horizons. I am a team player with excellent
             communication, leadership, and organizational skills. 
           </p>
