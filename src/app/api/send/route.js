@@ -1,8 +1,7 @@
-import { NextResponse } from "next/server";
+/*import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend('re_5hTBfKur_LDzseBMMNscoN8Ph6ZEBMhBB');
-const fromEmail = process.env.FROM_EMAIL;
 
 export async function POST(req, res) {
   const { email, subject, message } = await req.json();
@@ -26,3 +25,4 @@ export async function POST(req, res) {
     return NextResponse.json({ error });
   }
 }
+*/
